@@ -104,6 +104,7 @@ GEM
     parallel (1.19.1)
     parser (2.7.1.2)
       ast (~> 2.4.0)
+    pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -197,7 +198,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     standard (0.4.2)
       rubocop (~> 0.83.0)
       rubocop-performance (~> 1.5.2)
@@ -221,6 +221,7 @@ DEPENDENCIES
   byebug
   facebook-messenger
   listen (~> 3.2)
+  pg
   pry-byebug
   pry-rails
   puma (~> 4.1)
@@ -230,7 +231,6 @@ DEPENDENCIES
   sidekiq
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
   standardrb
 
 RUBY VERSION
