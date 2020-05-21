@@ -1,0 +1,2 @@
+class Chatter < ApplicationRecord
+end
