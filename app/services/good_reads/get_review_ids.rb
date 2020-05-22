@@ -2,14 +2,11 @@ require "open-uri"
 
 module GoodReads
   class GetReviewIds
+    include Callable
     include GoodReadsClient
 
     def initialize(book_id:)
       @book_id = book_id
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

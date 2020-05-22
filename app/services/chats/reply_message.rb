@@ -1,13 +1,11 @@
 module Chats
   class ReplyMessage
+    include Callable
+
     def initialize(message:, template:, next_state:)
       @message = message
       @template = template
       @next_state = next_state
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

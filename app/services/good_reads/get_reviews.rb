@@ -1,13 +1,10 @@
 module GoodReads
   class GetReviews
+    include Callable
     include GoodReadsClient
 
     def initialize(book_ids:)
       @book_ids = book_ids
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

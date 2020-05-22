@@ -1,14 +1,11 @@
 module Chats
   class GetBookRecommendation
+    include Callable
     include MessageTemplates::SimpleMessages
 
     def initialize(book_id:, facebook_sender_id:)
       @book_id = book_id
       @facebook_sender_id = facebook_sender_id
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

@@ -1,5 +1,6 @@
 module GoodReads
   class HandleSearch
+    include Callable
     include GoodReadsClient
     include Chats::MessageTemplates::BookSelections
     include Chats::MessageTemplates::SimpleMessages
@@ -8,10 +9,6 @@ module GoodReads
       @search_key = search_key
       @recipient_id = recipient_id
       @searcher = searcher
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

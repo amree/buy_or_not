@@ -1,13 +1,10 @@
 module Chats
   class HandlePostback
+    include Callable
     include MessageTemplates::SimpleMessages
 
     def initialize(postback:)
       @postback = postback
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

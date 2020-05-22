@@ -1,13 +1,10 @@
 module GoodReads
   class SearchByName
+    include Callable
     include GoodReadsClient
 
     def initialize(search_key:)
       @search_key = search_key
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

@@ -1,14 +1,11 @@
 module Chats
   class HandleMessage
+    include Callable
     include MessageTemplates::SearchType
     include MessageTemplates::SimpleMessages
 
     def initialize(message:)
       @message = message
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

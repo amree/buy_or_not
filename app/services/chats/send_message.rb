@@ -1,13 +1,11 @@
 module Chats
   class SendMessage
+    include Callable
+
     def initialize(sender_id:, template:, next_state:)
       @sender_id = sender_id
       @template = template
       @next_state = next_state
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call

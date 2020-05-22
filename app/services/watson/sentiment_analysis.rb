@@ -1,11 +1,9 @@
 module Watson
   class SentimentAnalysis
+    include Callable
+
     def initialize(texts:)
       @texts = texts
-    end
-
-    def self.call(*args)
-      new(*args).call
     end
 
     def call
