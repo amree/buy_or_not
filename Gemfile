@@ -25,6 +25,12 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "sidekiq"
 # Separate redis database
 gem "redis-namespace"
+# GoodReads API
+gem "goodreads"
+# Parse HTML
+gem "nokogiri"
+# IBM Watson API
+gem "ibm_watson"
 # Facebook API
 gem "facebook-messenger"
 
