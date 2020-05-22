@@ -36,6 +36,6 @@ module BuyOrNot
 
     config.active_job.queue_adapter = :sidekiq
 
-    Rails.autoloaders.main.ignore(Rails.root.join("app/app/bot/listen.rb"))
+    Rails.autoloaders.main.ignore(Rails.root.join("app/bot"))
   end
 end

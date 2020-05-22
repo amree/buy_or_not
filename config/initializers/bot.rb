@@ -12,6 +12,7 @@ unless Rails.env.production?
   bot_files.each { |file| require_dependency file }
 end
 
+require "#{Rails.root}/app/bot/listen.rb"
 
 class FacebookMessengerProvider < Facebook::Messenger::Configuration::Providers::Base
   # Verify that the given verify token is valid.

@@ -1,8 +1,5 @@
 require "facebook/messenger"
 
-class Listen
-end
-
 Facebook::Messenger::Bot.on :message do |message|
   Chats::HandleMessage.call(message: message)
 end
