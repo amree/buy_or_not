@@ -35,5 +35,7 @@ module BuyOrNot
     config.api_only = true
 
     config.active_job.queue_adapter = :sidekiq
+
+    Rails.autoloaders.main.ignore(Rails.root.join("app/app/bot/listen.rb"))
   end
 end

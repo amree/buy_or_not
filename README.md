@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL: https://buy-or-not.herokuapp.com/
 
-Things you may want to cover:
+## Notes
 
-* Ruby version
+### Welcome Message
 
-* System dependencies
+![Imgur](https://i.imgur.com/GebTtXY.png)
 
-* Configuration
+### Code Coverage
 
-* Database creation
+![Imgur](https://i.imgur.com/SNpFyuH.png)
 
-* Database initialization
+## Screencasts
 
-* How to run the test suite
+### Searches
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| By Book ID | By Book Name |
+| --- | --- |
+| ![Imgur](https://i.imgur.com/0Uz3VWU.gif) | ![Imgur](https://imgur.com/E7pXLQ7.gif) |
