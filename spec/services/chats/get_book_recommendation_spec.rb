@@ -10,17 +10,12 @@ RSpec.describe Chats::GetBookRecommendation, vcr: true do
 
   context "with positive sentimenets" do
     let(:book_id) { 17853143 }
+    let(:template) { read_template("SimpleMessages").recommend_buy_template }
 
     before do
-      message_template =
-        Class
-          .new
-          .extend(Chats::MessageTemplates::SimpleMessages)
-          .recommend_buy_template
-
       expect(Chats::SendMessage).to receive(:call).with(
         sender_id: facebook_sender_id,
-        template: message_template,
+        template: template,
         next_state: "initial"
       )
     end
@@ -30,17 +25,12 @@ RSpec.describe Chats::GetBookRecommendation, vcr: true do
 
   context "with negative sentimenets" do
     let(:book_id) { 6732019 }
+    let(:template) { read_template("SimpleMessages").not_recommend_buy_template }
 
     before do
-      message_template =
-        Class
-          .new
-          .extend(Chats::MessageTemplates::SimpleMessages)
-          .not_recommend_buy_template
-
       expect(Chats::SendMessage).to receive(:call).with(
         sender_id: facebook_sender_id,
-        template: message_template,
+        template: template,
         next_state: "initial"
       )
     end

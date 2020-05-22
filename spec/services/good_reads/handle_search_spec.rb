@@ -14,10 +14,7 @@ RSpec.describe GoodReads::HandleSearch, vcr: true do
 
   context "search by name" do
     let(:template) do
-      Class
-        .new
-        .extend(Chats::MessageTemplates::BookSelections)
-        .select_books_template(searcher_result)
+      read_template("BookSelections").select_books_template(searcher_result)
     end
     let(:search_key) { "rework" }
     let(:searcher) { GoodReads::SearchByName }
@@ -48,12 +45,7 @@ RSpec.describe GoodReads::HandleSearch, vcr: true do
   end
 
   context "search by id" do
-    let(:template) do
-      Class
-        .new
-        .extend(Chats::MessageTemplates::SimpleMessages)
-        .processing_template
-    end
+    let(:template) { read_template("SimpleMessages").processing_template }
     let(:search_key) { 17853143 }
     let(:searcher) { GoodReads::SearchById }
     let(:searcher_result) do
@@ -85,12 +77,7 @@ RSpec.describe GoodReads::HandleSearch, vcr: true do
   end
 
   context "when book not found" do
-    let(:template) do
-      Class
-        .new
-        .extend(Chats::MessageTemplates::SimpleMessages)
-        .not_found_template
-    end
+    let(:template) { read_template("SimpleMessages").not_found_template }
     let(:search_key) { 17853143 }
     let(:searcher) { GoodReads::SearchById }
 
@@ -109,12 +96,7 @@ RSpec.describe GoodReads::HandleSearch, vcr: true do
   end
 
   context "when unexpected error happened" do
-    let(:template) do
-      Class
-        .new
-        .extend(Chats::MessageTemplates::SimpleMessages)
-        .error_template
-    end
+    let(:template) { read_template("SimpleMessages").error_template }
     let(:search_key) { 17853143 }
     let(:searcher) { GoodReads::SearchById }
 
