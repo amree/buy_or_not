@@ -13,7 +13,7 @@ RSpec.describe Chats::SendMessage, vcr: true do
   end
 
   before do
-    expect(Bot).to receive(:deliver).with(
+    expect(Facebook::Messenger::Bot).to receive(:deliver).with(
       {
         recipient: {id: sender_id},
         message: template,
