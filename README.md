@@ -8,7 +8,7 @@ URL: https://buy-or-not.herokuapp.com/
 
 ![Imgur](https://i.imgur.com/GebTtXY.png)
 
-### Code Coverage
+### Code Coverages
 
 ![Imgur](https://i.imgur.com/SNpFyuH.png)
 
