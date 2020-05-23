@@ -1,0 +1,417 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.goodreads.com/review/show?format=xml&id=1915387742&key=GOODREADS_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.4.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.goodreads.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Server
+      Date:
+      - Sat, 23 May 2020 02:05:42 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - ALLOWALL
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Etag:
+      - W/"908a3e713259e76e0ea77a3f724e42ef"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - ccsid=854-8380378-1068548; path=/; expires=Wed, 23 May 2040 02:05:42 -0000
+      - locale=en; path=/
+      X-Request-Id:
+      - H08TFC16WQQPP68FJEG7
+      X-Runtime:
+      - '0.330587'
+      Vary:
+      - User-Agent,Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+      X-Amz-Rid:
+      - H08TFC16WQQPP68FJEG7
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[GOODREADS_KEY]]></key>\n
+        \   <method><![CDATA[review_show]]></method>\n  </Request>\n      <review>\n
+        \ <id>1915387742</id>\n    \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n    <book>\n  <id type=\"integer\">122</id>\n
+        \ <isbn>034541005X</isbn>\n  <isbn13>9780345410054</isbn13>\n  <text_reviews_count
+        type=\"integer\">4610</text_reviews_count>\n  <uri>kca://book/amzn1.gr.book.v1.BAUnJ-a7xc4Ps5_IZ0RL-A</uri>\n
+        \ <title>The Power of One (The Power of One, #1)</title>\n  <title_without_series>The
+        Power of One</title_without_series>\n  <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>\n
+        \ <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>\n
+        \ <large_image_url/>\n  <link>https://www.goodreads.com/book/show/122.The_Power_of_One</link>\n
+        \ <num_pages>544</num_pages>\n  <format>Paperback</format>\n  <edition_information/>\n
+        \ <publisher>Ballantine Books</publisher>\n  <publication_day>29</publication_day>\n
+        \ <publication_year>1996</publication_year>\n  <publication_month>9</publication_month>\n
+        \ <average_rating>4.35</average_rating>\n  <ratings_count>75074</ratings_count>\n
+        \ <description>In 1939, as Hitler casts his enormous, cruel shadow across
+        the world, the seeds of apartheid take root in South Africa. There, a boy
+        called Peekay is born. His childhood is marked by humiliation and abandonment,
+        yet he vows to survive and conceives heroic dreams, which are nothing compared
+        to what life actually has in store for him. He embarks on an epic journey
+        through a land of tribal superstition and modern prejudice where he will learn
+        the power of words, the power to transform lives and the power of one.</description>\n<authors>\n<author>\n<id>63</id>\n<name>Bryce
+        Courtenay</name>\n<role></role>\n<image_url nophoto='false'>\n<![CDATA[https://images.gr-assets.com/authors/1277671069p5/63.jpg]]>\n</image_url>\n<small_image_url
+        nophoto='false'>\n<![CDATA[https://images.gr-assets.com/authors/1277671069p2/63.jpg]]>\n</small_image_url>\n<link><![CDATA[https://www.goodreads.com/author/show/63.Bryce_Courtenay]]></link>\n<average_rating>4.20</average_rating>\n<ratings_count>148137</ratings_count>\n<text_reviews_count>9339</text_reviews_count>\n</author>\n</authors>\n
+        \ <published>1996</published>\n<work>  <id>649656</id>\n  <uri>kca://work/amzn1.gr.work.v1.gfwEmwQLE1_ryJXanGVZmg</uri>\n</work></book>\n\n\n
+        \   <read_statuses>\n        <read_status>\n          <id type=\"integer\">1818452230</id>\n
+        \         <old_status>to-read</old_status>\n          <status>read</status>\n
+        \         <updated_at type=\"datetime\">Thu Apr 27 12:26:05 -0700 2017</updated_at>\n
+        \         <ratings_count>0</ratings_count>\n          <comments_count>0</comments_count>\n
+        \       </read_status>\n        <read_status>\n          <id type=\"integer\">1715780692</id>\n
+        \         <old_status></old_status>\n          <status>to-read</status>\n
+        \         <updated_at type=\"datetime\">Thu Feb 16 10:35:06 -0800 2017</updated_at>\n
+        \         <ratings_count>12</ratings_count>\n          <comments_count>9</comments_count>\n
+        \       </read_status>\n    </read_statuses>\n  <rating>5</rating>\n  <votes>149</votes>\n
+        \ <spoiler_flag>false</spoiler_flag>\n  <spoilers_state>none</spoilers_state>\n
+        \ \n\n<shelves>\n    <shelf name=\"read\" exclusive=\"true\" id=\"6268068\"
+        review_shelf_id= \"\"/>\n\n</shelves>\n\n  <recommended_for></recommended_for>\n
+        \ <recommended_by></recommended_by>\n  <started_at></started_at>\n  <read_at></read_at>\n
+        \ <date_added>Thu Feb 16 10:35:06 -0800 2017</date_added>\n  <date_updated>Thu
+        Apr 27 12:26:21 -0700 2017</date_updated>\n  <read_count>1</read_count>\n
+        \ <body>\n      <![CDATA[good book!]]>\n  </body>\n\n  \n\n  <comments_count>32</comments_count>\n
+        \   <comments start=\"1\" end=\"32\" total=\"32\">\n        <comment>\n  <id>165662486</id>\n
+        \ <body><![CDATA[Fantastic review, Elyse. I have this one at home and always
+        had a good feeling about it. I shall look a little more forward to it now!!]]></body>\n
+        \ \n  <user>\n    <id>6003113</id>\n    <uri>kca://profile:goodreads/AURXDBI60UBGM</uri>\n
+        \   <name>Mike</name>\n    <display_name>Mike</display_name>\n\n    <location>Winnipeg,
+        MB, Canada</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/6003113-mike]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1330719867p3/6003113.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1330719867p2/6003113.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 12:33:25
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 12:33:25 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165662659</id>\n  <body><![CDATA[Mike --its soooooooooooooooooo
+        good! I don't know why I waited. <br />I need a fresh air break --- but when
+        I come back --I want to read other reviews....(or maybe I'll read some --from
+        my iphone while walking) oxo oh --'do' read this one!]]></body>\n  \n  <user>\n
+        \   <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 12:39:13
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 12:39:13 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165663031</id>\n  <body><![CDATA[\"It's a cruel and
+        beautiful world we live in.\" So, so true, my dear Elyse! Sounds like an incredible
+        read!! xxoo]]></body>\n  \n  <user>\n    <id>20691061</id>\n    <uri>kca://profile:goodreads/A17WXCK8Y4R1UL</uri>\n
+        \   <name>KAS</name>\n    <display_name>KAS</display_name>\n\n    <location>Mount
+        Joy, PA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/20691061-kas]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1472348331p3/20691061.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1472348331p2/20691061.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 12:48:37
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 12:48:37 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165665939</id>\n  <body><![CDATA[Excellent review!
+        This book pairs well with \"Cry the beloved Country\" if you haven't read
+        it already. . .]]></body>\n  \n  <user>\n    <id>2204187</id>\n    <uri>kca://profile:goodreads/AW9V91ZFBJLF6</uri>\n
+        \   <name>The Hofs</name>\n    <display_name>The Hofs</display_name>\n\n    <location>The
+        United States</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/2204187-the-hofs]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1239269796p3/2204187.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1239269796p2/2204187.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 14:05:39
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 14:05:39 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165667274</id>\n  <body><![CDATA[Thank you KAS!!!
+        And hope you have a good weekend. Xo. I'm hoping to have time to see the Tom
+        Hanks new opening \"ThenCircle\"]]></body>\n  \n  <user>\n    <id>597461</id>\n
+        \   <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n    <name>Elyse </name>\n
+        \   <display_name>Elyse  Walters</display_name>\n\n    <location>San Jose,
+        CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 14:41:40
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 14:41:40 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165667359</id>\n  <body><![CDATA[Thanks Leslie....
+        I realize I have had that added on my to read list for a long time, but I
+        don't own it so I wasn't able to reach for it on my shelf so quickly. ...
+        but thank you for the reminder.]]></body>\n  \n  <user>\n    <id>597461</id>\n
+        \   <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n    <name>Elyse </name>\n
+        \   <display_name>Elyse  Walters</display_name>\n\n    <location>San Jose,
+        CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 14:43:57
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 14:43:57 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165676686</id>\n  <body><![CDATA[Elyse, I thought
+        this book was absolutely fantastic - as is your review! One of my very favorites.
+        I have been meaning to read something else by this author and just haven't
+        done so yet. You have reminded me to try a bit harder!]]></body>\n  \n  <user>\n
+        \   <id>3639005</id>\n    <uri>kca://profile:goodreads/A1GLVYJC6H5H0A</uri>\n
+        \   <name>Candi</name>\n    <display_name>Candi</display_name>\n\n    <location>Victor,
+        NY</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/3639005-candi]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1585187464p3/3639005.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1585187464p2/3639005.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 19:28:40
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 19:28:40 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165679182</id>\n  <body><![CDATA[Thank you Candi!!!]]></body>\n
+        \ \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 21:05:26
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 21:05:26 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165681144</id>\n  <body><![CDATA[It's an incredible
+        story. Glad you loved this one too Elyse!]]></body>\n  \n  <user>\n    <id>25545124</id>\n
+        \   <uri>kca://profile:goodreads/ALIQP5ZG711XK</uri>\n    <name>Vanessa</name>\n
+        \   <display_name>Vanessa</display_name>\n\n    <location>Sydney, NSW, Australia</location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/25545124-vanessa]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1505021049p3/25545124.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1505021049p2/25545124.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Thu Apr 27 23:06:41
+        -0700 2017</created_at>\n  <updated_at>Thu Apr 27 23:06:41 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165682503</id>\n  <body><![CDATA[Interesting review
+        Elyse. I enjoyed this bpok but some of his other I thought were better<br
+        />In fiction Matthew Flinders Cat <br />Non fiction April Fools Day.]]></body>\n
+        \ \n  <user>\n    <id>3501645</id>\n    <uri>kca://profile:goodreads/A2BUD736W27XPA</uri>\n
+        \   <name>Jenny</name>\n    <display_name>Jenny</display_name>\n\n    <location></location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/3501645-jenny]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1459677709p3/3501645.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1459677709p2/3501645.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 00:30:25
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 00:30:25 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165683118</id>\n  <body><![CDATA[Look at you, reading
+        an Aussie author. I've got the book on my shelf, but I haven't read it yet.]]></body>\n
+        \ \n  <user>\n    <id>29843800</id>\n    <uri>kca://profile:goodreads/A1EDIF82LQVX9B</uri>\n
+        \   <name>Bianca</name>\n    <display_name>Bianca</display_name>\n\n    <location><![CDATA[Perth,
+        Western Australia, Australia]]></location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/29843800-bianca]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1589154116p3/29843800.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1589154116p2/29843800.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 01:05:50
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 01:05:50 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165683626</id>\n  <body><![CDATA[<i>Bianca wrote:
+        \"Look at you, reading an Aussie author. I've got the book on my shelf, but
+        I haven't read it yet.\"</i><br />Hi Bianca, yeah --my book was on my TBR
+        list for years --so glad I read it. I'm loving many of the older books I missed
+        this year.]]></body>\n  \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 01:36:37
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 01:36:37 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165683634</id>\n  <body><![CDATA[<i>Jenny wrote:
+        \"Interesting review Elyse. I enjoyed this bpok but some of his other I thought
+        were better<br />In fiction Matthew Flinders Cat <br />Non fiction April Fools
+        Day.\"</i><br /><br />Thanks for the tips Jenny --I'll look into those!!!]]></body>\n
+        \ \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 01:37:13
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 01:37:13 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165683648</id>\n  <body><![CDATA[<i>Vanessa wrote:
+        \"It's an incredible story. Glad you loved this one too Elyse!\"</i><br />Thanks
+        Vanessa ---thanks --sure was! -glad to finally be reading books I've owned
+        for a long time but had not read.]]></body>\n  \n  <user>\n    <id>597461</id>\n
+        \   <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n    <name>Elyse </name>\n
+        \   <display_name>Elyse  Walters</display_name>\n\n    <location>San Jose,
+        CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 01:38:04
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 01:38:04 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165683904</id>\n  <body><![CDATA[I read the book
+        wayyyyyy before Goodreads existed. It makes me wonder how I would review it
+        today. I remember it was a book I viewed as a favourite for a long time, it's
+        just the memories of it are so hazy until your review reminded me how much
+        I loved it all over again. So thanks for the memories!]]></body>\n  \n  <user>\n
+        \   <id>25545124</id>\n    <uri>kca://profile:goodreads/ALIQP5ZG711XK</uri>\n
+        \   <name>Vanessa</name>\n    <display_name>Vanessa</display_name>\n\n    <location>Sydney,
+        NSW, Australia</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/25545124-vanessa]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1505021049p3/25545124.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1505021049p2/25545124.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 01:52:50
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 01:52:50 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165685485</id>\n  <body><![CDATA[This sounds really
+        good, Elyse. Excellent review! And happy Friday ;)]]></body>\n  \n  <user>\n
+        \   <id>3643764</id>\n    <uri>kca://profile:goodreads/A29WOHDAPPJWIW</uri>\n
+        \   <name>Esil</name>\n    <display_name>Esil</display_name>\n\n    <location>Toronto,
+        ON, Canada</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/3643764-esil]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1443746908p3/3643764.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1443746908p2/3643764.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 03:12:37
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 03:12:37 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165686500</id>\n  <body><![CDATA[Awesome review Elyse
+        !]]></body>\n  \n  <user>\n    <id>4824487</id>\n    <uri>kca://profile:goodreads/AE6JRJ4ZD0EWA</uri>\n
+        \   <name>Megan</name>\n    <display_name>Megan</display_name>\n\n    <location>Ocean
+        City, MD</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/4824487-megan]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1546998130p3/4824487.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1546998130p2/4824487.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 04:06:17
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 04:06:17 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165688317</id>\n  <body><![CDATA[Wonderful review,
+        Elyse. Welcome to the world of my favourite author. If you have not already,
+        please find TANDIA, which is a loose sequel.]]></body>\n  \n  <user>\n    <id>5903843</id>\n
+        \   <uri>kca://profile:goodreads/AQ9YTP0DZ09RE</uri>\n    <name>Matt</name>\n
+        \   <display_name>Matt</display_name>\n\n    <location>Calgary, AB, Canada</location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/5903843-matt]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1586821535p3/5903843.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1586821535p2/5903843.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 05:20:25
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 05:20:25 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165689123</id>\n  <body><![CDATA[One of my very favorites!!!
+        Great review Elyse!<br />Thx for the heads up on TANDIA Matt!]]></body>\n
+        \ \n  <user>\n    <id>7668522</id>\n    <uri>kca://profile:goodreads/A1QYUXNJ3ON6G7</uri>\n
+        \   <name>Carol</name>\n    <display_name>Carol</display_name>\n\n    <location>The
+        United States</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/7668522-carol]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1546364878p3/7668522.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1546364878p2/7668522.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 05:51:35
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 05:51:35 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165693030</id>\n  <body><![CDATA[I read this years
+        ago...loved it as well. Great review E:))]]></body>\n  \n  <user>\n    <id>6663962</id>\n
+        \   <uri>kca://profile:goodreads/A2NIT4MSRMWG4I</uri>\n    <name>Alex is The
+        Romance Fox</name>\n    <display_name>Alex is The Romance Fox</display_name>\n\n
+        \   <location><![CDATA[Johannesburg, 2192, South Africa]]></location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/6663962-alex-is-the-romance-fox]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1428866380p3/6663962.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1428866380p2/6663962.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 07:50:53
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 07:50:53 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165719315</id>\n  <body><![CDATA[Hi Esil. ...thanks,
+        great book...... long day here!<br />Happy 'late' Friday back at ya! :).]]></body>\n
+        \ \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 22:14:30
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 22:14:30 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165719325</id>\n  <body><![CDATA[Thank you Meghan.
+        :)]]></body>\n  \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 22:14:49
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 22:14:49 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165719353</id>\n  <body><![CDATA[Thanks Matt....
+        I'm 'on' it!!! I'll mark it with extra 'Matt' enthusiasm:)]]></body>\n  \n
+        \ <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 22:16:23
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 22:16:23 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165719388</id>\n  <body><![CDATA[;)]]></body>\n  \n
+        \ <user>\n    <id>5903843</id>\n    <uri>kca://profile:goodreads/AQ9YTP0DZ09RE</uri>\n
+        \   <name>Matt</name>\n    <display_name>Matt</display_name>\n\n    <location>Calgary,
+        AB, Canada</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/5903843-matt]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1586821535p3/5903843.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1586821535p2/5903843.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Fri Apr 28 22:18:18
+        -0700 2017</created_at>\n  <updated_at>Fri Apr 28 22:18:18 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165725878</id>\n  <body><![CDATA[Great review - this
+        book is one of the best!]]></body>\n  \n  <user>\n    <id>16254355</id>\n
+        \   <uri>kca://profile:goodreads/A1USGCON96SOLV</uri>\n    <name>Matthew</name>\n
+        \   <display_name>Matthew</display_name>\n\n    <location>Greenwood, IN</location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/16254355-matthew]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1464987365p3/16254355.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1464987365p2/16254355.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sat Apr 29 05:15:25
+        -0700 2017</created_at>\n  <updated_at>Sat Apr 29 05:15:25 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165748216</id>\n  <body><![CDATA[I love your quote
+        and review. There is a lot of gray area. Adding<br />xo]]></body>\n  \n  <user>\n
+        \   <id>29279709</id>\n    <uri>kca://profile:goodreads/A1PP72CFMVVL5W</uri>\n
+        \   <name>Karen</name>\n    <display_name>Karen</display_name>\n\n    <location></location>\n\n
+        \   <link><![CDATA[https://www.goodreads.com/user/show/29279709-karen]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1458171712p3/29279709.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1458171712p2/29279709.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sat Apr 29 17:14:10
+        -0700 2017</created_at>\n  <updated_at>Sat Apr 29 17:14:10 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165794680</id>\n  <body><![CDATA[Matt... smiles back!
+        :). Thanks]]></body>\n  \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sun Apr 30 20:29:36
+        -0700 2017</created_at>\n  <updated_at>Sun Apr 30 20:29:36 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165794711</id>\n  <body><![CDATA[Ani... thank you!
+        Agree... how rotten it feels to bullied.]]></body>\n  \n  <user>\n    <id>597461</id>\n
+        \   <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n    <name>Elyse </name>\n
+        \   <display_name>Elyse  Walters</display_name>\n\n    <location>San Jose,
+        CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sun Apr 30 20:30:52
+        -0700 2017</created_at>\n  <updated_at>Sun Apr 30 20:30:52 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165794749</id>\n  <body><![CDATA[Matthew... thanks
+        - 'high five'! Terrific- one of the best as you say!!]]></body>\n  \n  <user>\n
+        \   <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sun Apr 30 20:31:53
+        -0700 2017</created_at>\n  <updated_at>Sun Apr 30 20:31:53 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>165794899</id>\n  <body><![CDATA[Hi Karen ... thanks
+        ... it's a wonderful book. The ending is controversial ... but overall a powerful
+        novel.]]></body>\n  \n  <user>\n    <id>597461</id>\n    <uri>kca://profile:goodreads/A2ZJM6A94HHSR3</uri>\n
+        \   <name>Elyse </name>\n    <display_name>Elyse  Walters</display_name>\n\n
+        \   <location>San Jose, CA</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/597461-elyse-walters]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1514246949p3/597461.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1514246949p2/597461.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Sun Apr 30 20:36:20
+        -0700 2017</created_at>\n  <updated_at>Sun Apr 30 20:36:20 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>166173141</id>\n  <body><![CDATA[I fell in love with
+        Peekay too, Elyse. Reading your lovely review revived memories of what an
+        inspiring character he is.]]></body>\n  \n  <user>\n    <id>4863523</id>\n
+        \   <uri>kca://profile:goodreads/A3NZWD37T1JMM4</uri>\n    <name>Laysee</name>\n
+        \   <display_name>Laysee</display_name>\n\n    <location></location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/4863523-laysee]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1459741824p3/4863523.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1459741824p2/4863523.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Wed May 10 06:36:25
+        -0700 2017</created_at>\n  <updated_at>Wed May 10 06:36:25 -0700 2017</updated_at>\n</comment>\n\n
+        \       <comment>\n  <id>166907673</id>\n  <body><![CDATA[A brilliant book!
+        Follow up with Tandia. If you're a Courtenay fan I also recommend Whitethorn
+        but don't read it too soon after The Power of One as the stories are similar
+        which can be a bit confusing. I love all his books and that includes his non
+        fiction April Fools Day. Four Fires is also a nice book. Hope this helps.]]></body>\n
+        \ \n  <user>\n    <id>52998751</id>\n    <uri>kca://profile:goodreads/A3MOO10UB3KVK5</uri>\n
+        \   <name>Garry</name>\n    <display_name>Garry Geddes</display_name>\n\n
+        \   <location>The United Kingdom</location>\n\n    <link><![CDATA[https://www.goodreads.com/user/show/52998751-garry-geddes]]></link>\n\n
+        \   <image_url><![CDATA[https://images.gr-assets.com/users/1456256868p3/52998751.jpg]]></image_url>\n
+        \   <small_image_url><![CDATA[https://images.gr-assets.com/users/1456256868p2/52998751.jpg]]></small_image_url>\n
+        \   <has_image>true</has_image>\n\n  </user>\n\n  <created_at>Tue May 30 13:27:16
+        -0700 2017</created_at>\n  <updated_at>Tue May 30 13:27:16 -0700 2017</updated_at>\n</comment>\n\n
+        \   </comments>\n    <url><![CDATA[https://www.goodreads.com/review/show/1915387742]]></url>\n
+        \ <link><![CDATA[https://www.goodreads.com/review/show/1915387742]]></link>\n
+        \   <owned>0</owned>\n</review>\n\n\n</GoodreadsResponse>"
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:05:42 GMT
+recorded_with: VCR 5.1.0

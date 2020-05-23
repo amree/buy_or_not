@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.goodreads.com/book/show?format=xml&id=abc&key=GOODREADS_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19.4.0 x86_64) ruby/2.6.3p62
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.goodreads.com
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Server
+      Date:
+      - Sat, 23 May 2020 02:10:27 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 404 Not Found
+      X-Frame-Options:
+      - ALLOWALL
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - ccsid=203-5317035-0194705; path=/; expires=Wed, 23 May 2040 02:10:27 -0000
+      - locale=en; path=/
+      X-Request-Id:
+      - 43V7X5W030NWCG3QZQB3
+      X-Runtime:
+      - '0.066950'
+      Vary:
+      - User-Agent,Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+      X-Amz-Rid:
+      - 43V7X5W030NWCG3QZQB3
+    body:
+      encoding: ASCII-8BIT
+      string: "<error>Page not found</error>"
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:10:27 GMT
+recorded_with: VCR 5.1.0

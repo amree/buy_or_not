@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://graph.facebook.com/v3.2/me/messages?access_token=FACEBOOK_ACCESS_TOKEN
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":"3293340114019303"},"message":{"text":"Something
+        went wrong, please try again."},"messaging_type":"UPDATE"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Business-Use-Case-Usage:
+      - '{"100316455036764":[{"type":"messenger","call_count":1,"total_cputime":1,"total_time":1,"estimated_time_to_regain_access":0}]}'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Facebook-Api-Version:
+      - v7.0
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      Pragma:
+      - no-cache
+      X-Fb-Rev:
+      - '1002160937'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Fb-Trace-Id:
+      - EN1fp6ddIhU
+      X-Fb-Request-Id:
+      - AMOiH-ot1NRYzSKRCuSgh7h
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - ubb1zSkEbOzUHQEH98y9fdpI+KNaC4rtofY8Pk4TWWJZ8+7Kw597O5oZxXlvkZbBxuw583aV1T4htrzNmNNjAw==
+      Date:
+      - Sat, 23 May 2020 02:10:28 GMT
+      Alt-Svc:
+      - h3-27=":443"; ma=3600
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '139'
+    body:
+      encoding: UTF-8
+      string: '{"recipient_id":"3293340114019303","message_id":"m_L1TfrOzJc4MtPZEcGdqPye_XJbbklk63g8hYLlUzf0J12dx8qHPEnCFwFlg4zn33yaw1_zhZEqLxAaYY6ZCe2A"}'
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:10:28 GMT
+recorded_with: VCR 5.1.0

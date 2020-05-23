@@ -1,0 +1,195 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://iam.cloud.ibm.com/identity/token
+    body:
+      encoding: UTF-8
+      string: grant_type=urn%3Aibm%3Aparams%3Aoauth%3Agrant-type%3Aapikey&apikey=WATSON_NLP_IAM_APIKEY&response_type=cloud_iam
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - iam.cloud.ibm.com
+      User-Agent:
+      - http.rb/4.1.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2579'
+      Transaction-Id:
+      - c9a3c1967a524f268b19048ec51515bc
+      Content-Language:
+      - en-US
+      Date:
+      - Sat, 23 May 2020 02:10:35 GMT
+      Connection:
+      - close
+      Set-Cookie:
+      - sessioncookie=92ca7c463235e69e786f0d8db978a4c6; Path=/; Secure; HttpOnly
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"eyJraWQiOiIyMDIwMDQyNTE4MjkiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTVkODM4OThlLTliYzUtNGVlZS05NzMxLTk5ZGNjMWNjMmI2NCIsImlkIjoiaWFtLVNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJyZWFsbWlkIjoiaWFtIiwiaWRlbnRpZmllciI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJuYW1lIjoiQXV0by1nZW5lcmF0ZWQgc2VydmljZSBjcmVkZW50aWFscyIsInN1YiI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJzdWJfdHlwZSI6IlNlcnZpY2VJZCIsInVuaXF1ZV9pbnN0YW5jZV9jcm5zIjpbImNybjp2MTpibHVlbWl4OnB1YmxpYzpuYXR1cmFsLWxhbmd1YWdlLXVuZGVyc3RhbmRpbmc6dXMtZWFzdDphLzhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzOjY4M2U3Y2Y3LTcxZGEtNGQyYy1iMjdmLTQ0YzlkNzY4NjRiODo6Il0sImFjY291bnQiOnsidmFsaWQiOnRydWUsImJzcyI6IjhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzIn0sImlhdCI6MTU5MDE5OTgzMiwiZXhwIjoxNTkwMjAzNDMyLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.ed5aR-iqqpxrtj53nOSDQnNYWQu1pwB-VJjycgd_e9CQa2wsUP91s1tefZkUwXCnd2IiVo3QQDp4_iK9RU_SEC7__tJcV-IeD3F_eDGdiB_L1w4wEC96LdHwtZm1QwfySIyW1J5eloRdc6grjBXIuKohHOVJwF83Dl8d24JRgsuqTjGdLBx2ltug3Daheuz5isoDyUj3HazuFVoRDChtEbKFptuZuINUcz-KkBS4AF5_eYv7LBztN3QlVIeMGeDW4Goi4lXGsDQcEMT7gO-JbcWtOQJNqhkoqeuW34YlBsBzJJDRa4Rfy_ZNRovkqQlIgHaCJ7ISYxohd-buTFUhMw","refresh_token":"OKBnxLSCQm8zL4Piq66V9kB9BK5dFT05Q1TLltJJsHaypPFpQhNdKjt0JV-ew05srT7sMTjrR8p_mgsda_vrXmvtwa8awdc3xgfI6HXDlf0lPIi0RWioHu6upLbcHkbWdShXSgjVDkszAK7IK-oqMFX1WPMcquTqR_V17l7iy3Uet-VFjR48pvNZPMjI69pbNY-srOQHZI8tqXXLBpdlYpqG_EdV3mQlxQ0XWeJM1z8nB0-pNJBVysAVfHiZ2Cw339H_axA13vQGhTOAudGrkKhVK1KLWWERFZ4QU78KNNdT8YF5AcCCSP5pKEO9yzP_t4bwzCxdgLFqJm3qTghJkEt8VHKyTw7Loan-3qkY9XRIo-6mqBGW1_LeuPKhVEc-owQpntFk1PkUBcG2LlSS5R2r-iYkRuP7ZHXXkUifvPNquVOFItYOsnRgnHy2sjefRFmuuln2nhCfD7YVZmlkm2Z-PJJTL4QkiEdFwMj42LqJ1FxXA3vkbOsTipYBY6c-iuG5QtRfgjZvT69OS8S6YSohV-Ee7nTtbPKJeZXWdK28_Yz1p_-HQUUxmqDURWeT9MhDaaQpC3FWaMPOFFaiu-8WZK3DHkLAcFPHAYibw22ULj4GD_WqYZoAfn4n1dvOnXdsc3b_HPD-yAMNIDtB9-8vCuHlxc1GJT-192J21XCHlxh34yVT1ZXN7I-rIBqLt_g8PoA0138zph7CzqDqZKkXYoKptYpBAvgvK6pIZszKl4umTuYh_g94P78tSQo9qQl-viDsxyEX2paM6dHezGLH1P2kuLSwMnQGpxySWsi_wDA34gX5pcXwcIri8BSbJNTM_v41BFpOQ5rm_q3Jplou-_2WTIDDnGzjWTMSu026ufTPKuqIqf1UkniKYQdtNfrL_lgElUct8TQIEdXImEWiVCL-tcXQO0aoiKZPFyZv-P46LYzzNkyVvrJFt_Ibw2NLiPFi7gcvTdS4f_ipXWMmq8HXBwrn95xx7NE8SAjojEFCJZ0UCj9iEJCflIS7VjkhXHHUc7QADlIppRCTQDa6K7lvDdWrlSw7Td8oXN8uaA","token_type":"Bearer","expires_in":3600,"expiration":1590203432,"scope":"ibm
+        openid"}'
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:10:35 GMT
+- request:
+    method: post
+    uri: WATSON_NLP_URL/v1/analyze?version=2019-07-12
+    body:
+      encoding: UTF-8
+      string: '{"features":{"sentiment":{}},"text":"i hate this book","language":"en"}'
+    headers:
+      User-Agent:
+      - watson-apis-ruby-sdk-1.4.0 x86_64-apple-darwin19.4.0 ruby-2.6.3
+      X-Ibmcloud-Sdk-Analytics:
+      - service_name=natural-language-understanding;service_version=V1;operation_id=analyze
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiIyMDIwMDQyNTE4MjkiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTVkODM4OThlLTliYzUtNGVlZS05NzMxLTk5ZGNjMWNjMmI2NCIsImlkIjoiaWFtLVNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJyZWFsbWlkIjoiaWFtIiwiaWRlbnRpZmllciI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJuYW1lIjoiQXV0by1nZW5lcmF0ZWQgc2VydmljZSBjcmVkZW50aWFscyIsInN1YiI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJzdWJfdHlwZSI6IlNlcnZpY2VJZCIsInVuaXF1ZV9pbnN0YW5jZV9jcm5zIjpbImNybjp2MTpibHVlbWl4OnB1YmxpYzpuYXR1cmFsLWxhbmd1YWdlLXVuZGVyc3RhbmRpbmc6dXMtZWFzdDphLzhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzOjY4M2U3Y2Y3LTcxZGEtNGQyYy1iMjdmLTQ0YzlkNzY4NjRiODo6Il0sImFjY291bnQiOnsidmFsaWQiOnRydWUsImJzcyI6IjhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzIn0sImlhdCI6MTU5MDE5OTgzMiwiZXhwIjoxNTkwMjAzNDMyLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.ed5aR-iqqpxrtj53nOSDQnNYWQu1pwB-VJjycgd_e9CQa2wsUP91s1tefZkUwXCnd2IiVo3QQDp4_iK9RU_SEC7__tJcV-IeD3F_eDGdiB_L1w4wEC96LdHwtZm1QwfySIyW1J5eloRdc6grjBXIuKohHOVJwF83Dl8d24JRgsuqTjGdLBx2ltug3Daheuz5isoDyUj3HazuFVoRDChtEbKFptuZuINUcz-KkBS4AF5_eYv7LBztN3QlVIeMGeDW4Goi4lXGsDQcEMT7gO-JbcWtOQJNqhkoqeuW34YlBsBzJJDRa4Rfy_ZNRovkqQlIgHaCJ7ISYxohd-buTFUhMw
+      Connection:
+      - close
+      Host:
+      - api.us-east.natural-language-understanding.watson.cloud.ibm.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '203'
+      Cache-Control:
+      - no-cache, no-store
+      X-Dp-Watson-Tran-Id:
+      - d27d556207ea77de31c4b2b1cda5e4ed
+      Content-Security-Policy:
+      - default-src 'none'
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Global-Transaction-Id:
+      - d27d556207ea77de31c4b2b1cda5e4ed
+      X-Edgeconnect-Midmile-Rtt:
+      - '258'
+      X-Edgeconnect-Origin-Mex-Latency:
+      - '194'
+      Date:
+      - Sat, 23 May 2020 02:10:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "usage": {
+            "text_units": 1,
+            "text_characters": 16,
+            "features": 1
+          },
+          "sentiment": {
+            "document": {
+              "score": -0.96302,
+              "label": "negative"
+            }
+          },
+          "language": "en"
+        }
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:10:36 GMT
+- request:
+    method: post
+    uri: WATSON_NLP_URL/v1/analyze?version=2019-07-12
+    body:
+      encoding: UTF-8
+      string: '{"features":{"sentiment":{}},"text":"i love this book","language":"en"}'
+    headers:
+      User-Agent:
+      - watson-apis-ruby-sdk-1.4.0 x86_64-apple-darwin19.4.0 ruby-2.6.3
+      X-Ibmcloud-Sdk-Analytics:
+      - service_name=natural-language-understanding;service_version=V1;operation_id=analyze
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer eyJraWQiOiIyMDIwMDQyNTE4MjkiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJpYW0tU2VydmljZUlkLTVkODM4OThlLTliYzUtNGVlZS05NzMxLTk5ZGNjMWNjMmI2NCIsImlkIjoiaWFtLVNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJyZWFsbWlkIjoiaWFtIiwiaWRlbnRpZmllciI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJuYW1lIjoiQXV0by1nZW5lcmF0ZWQgc2VydmljZSBjcmVkZW50aWFscyIsInN1YiI6IlNlcnZpY2VJZC01ZDgzODk4ZS05YmM1LTRlZWUtOTczMS05OWRjYzFjYzJiNjQiLCJzdWJfdHlwZSI6IlNlcnZpY2VJZCIsInVuaXF1ZV9pbnN0YW5jZV9jcm5zIjpbImNybjp2MTpibHVlbWl4OnB1YmxpYzpuYXR1cmFsLWxhbmd1YWdlLXVuZGVyc3RhbmRpbmc6dXMtZWFzdDphLzhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzOjY4M2U3Y2Y3LTcxZGEtNGQyYy1iMjdmLTQ0YzlkNzY4NjRiODo6Il0sImFjY291bnQiOnsidmFsaWQiOnRydWUsImJzcyI6IjhhZTY3OWQzZDkwOTQ4NDA5ODExOTg5MDU0OTFhZDkzIn0sImlhdCI6MTU5MDE5OTgzMiwiZXhwIjoxNTkwMjAzNDMyLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.ed5aR-iqqpxrtj53nOSDQnNYWQu1pwB-VJjycgd_e9CQa2wsUP91s1tefZkUwXCnd2IiVo3QQDp4_iK9RU_SEC7__tJcV-IeD3F_eDGdiB_L1w4wEC96LdHwtZm1QwfySIyW1J5eloRdc6grjBXIuKohHOVJwF83Dl8d24JRgsuqTjGdLBx2ltug3Daheuz5isoDyUj3HazuFVoRDChtEbKFptuZuINUcz-KkBS4AF5_eYv7LBztN3QlVIeMGeDW4Goi4lXGsDQcEMT7gO-JbcWtOQJNqhkoqeuW34YlBsBzJJDRa4Rfy_ZNRovkqQlIgHaCJ7ISYxohd-buTFUhMw
+      Connection:
+      - close
+      Host:
+      - api.us-east.natural-language-understanding.watson.cloud.ibm.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '203'
+      Cache-Control:
+      - no-cache, no-store
+      X-Dp-Watson-Tran-Id:
+      - 1f8d56ec3964c084ab8e0787da2c6692
+      Content-Security-Policy:
+      - default-src 'none'
+      Pragma:
+      - no-cache
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains;
+      X-Global-Transaction-Id:
+      - 1f8d56ec3964c084ab8e0787da2c6692
+      X-Edgeconnect-Midmile-Rtt:
+      - '259'
+      X-Edgeconnect-Origin-Mex-Latency:
+      - '224'
+      Date:
+      - Sat, 23 May 2020 02:10:36 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "usage": {
+            "text_units": 1,
+            "text_characters": 16,
+            "features": 1
+          },
+          "sentiment": {
+            "document": {
+              "score": 0.981501,
+              "label": "positive"
+            }
+          },
+          "language": "en"
+        }
+    http_version: null
+  recorded_at: Sat, 23 May 2020 02:10:36 GMT
+recorded_with: VCR 5.1.0
